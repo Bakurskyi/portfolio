@@ -11,17 +11,17 @@
 <body>
     <header>
         <div class="container">
-            <div class="headercontent">
-                <figure>
-                    <img class="logo" src="image/logo.svg" alt="логотип">
+            <div class="header-content">
+                <figure class="header-content__figure">
+                    <img class="header-content__logo" src="image/logo.svg" alt="логотип">
                     <figcaption>
                         DenHunter
                     </figcaption>
                 </figure>
                 <nav>
-                    <a href="#" class="navlink">Что я умею</a>
-                    <a href="#" class="navlink">Лэндинги</a>
-                    <a href="#" class="navlink">Контакты</a>
+                    <a href="#" class="header-content__navlink">Что я умею</a>
+                    <a href="#" class="header-content__navlink">Лэндинги</a>
+                    <a href="#" class="header-content__navlink">Контакты</a>
                 </nav>
             </div>
         </div>
@@ -29,39 +29,136 @@
     <main>
         <section class="my-advertising">
             <div class="container">
-                <div class="my-advertising_content">
+                <div class="my-advertising__content">
                     <h1>
                         Красивый дизайн? Удобный интерфейс?<br> Может, все вместе?
                     </h1>
-                    <span class="my-advertising_slogan">
+                    <span class="my-advertising__slogan">
                 Делаю дизайны сайтов, лэндингов, баннеров на фигме
                 </span>
                     <h2>
                         Меня зовут Данила
                     </h2>
-                    <span class="my-advertising_about-me">
+                    <span class="my-advertising__about-me">
                 Я  занимаюсь веб-дизайном и делаю сайты, лэндинги и баннеры на Figma
                 </span>
-                    <button class="my-advertising_to-my-works">Ниже jdпредставлены некоторые из моих работ</button>
+                    <button class="my-advertising__to-my-works">Ниже представлены некоторые из моих работ</button>
                 </div>
             </div>
         </section>
         <section class="my-works">
             <div class="container">
-                <div class="my-works_content">
+                <div class="my-works__content">
                     <div class="my-works_card-box card-box">
-                        <img src="image/hardware_store.png" alt="лендинг строительного магазина" class="card-box_item card-box_hardware-store">
-                        <img src="image/banking_company.png" alt="лендинг банковской компании" class="card-box_item card-box_banking-company">
-                        <img src="image/med_company.png" alt="лендинг медицинской компании" class="card-box_item card-box_med-company">
-                        <img src="image/comp_game.png" alt="лендинг компьютерной игры" class="card-box_item card-box_comp-game">
+                        <div class="card-box__hover-wrap">
+                            <img src="image/hardware_store.png" alt="лендинг строительного магазина" class="card-box__item card-box__item_hardware-store">
+                            <div class="card-box__hover-block">
+                                <a href="#" class="card-box__hover-sign">Лэндинг строительного магазина</a>
+                            </div>
+                        </div>
+                        <div class="card-box__hover-wrap">
+                            <img src="image/comp_game.png" alt="лендинг компьютерной игры" class="card-box__item card-box__item_comp-game">
+                            <div class="card-box__hover-block">
+                                <a href="#" class="card-box__hover-sign">Лэндинг компьютерной игры</a>
+                            </div>
+                        </div>
+                        <div class="card-box__hover-wrap">
+                            <img src="image/banking_company.png" alt="лендинг банковской компании" class="card-box__item card-box__item_banking-company">
+                            <div class="card-box__hover-block">
+                                <a href="#" class="card-box__hover-sign">Лэндинг банковской компании</a>
+                            </div>
+                        </div>
+                        <div class="card-box__hover-wrap">
+                            <img src="image/med_company.png" alt="лендинг медицинской компании" class="card-box__item card-box__item_med-company">
+                            <div class="card-box__hover-block">
+                                <a href="#" class="card-box__hover-sign">Лэндинг медицинской компании</a>
+                            </div>
+                        </div>
                     </div>
-                    <button class="my-works_show-more">
+                    <button class="my-works__show-more blue-button">
                         Показать еще
                     </button>
 
                 </div>
             </div>
         </section>
+        <section class="callback-box">
+            <div class="container">
+                <div class="callback-box__content">
+                    <h2>Здесь вы найдете форму обратной связи и мои контакты</h2>
+                    <form action="#" class="callback-box__form form">
+                        <input type="text" name="name" class="form__item form__item_name" placeholder="ФИО">
+                        <input type="email" name="email" class="form__item form__item_email"placeholder="e-mail">
+                        <input type="tel" name="tel" class="form__item form__item_tel" placeholder="Телефон">
+                        <input type="text" name="company" class="form__item form__item_company" placeholder="Компания">
+                        <textarea name="message" id="" cols="30" rows="10" class="form__item form__item_message" placeholder="Сообщение"></textarea>
+                        <button class="form__button blue-button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__content">
+                    <h2 class="contacts__title">Мои контакты</h2>
+                    <label>Почта: <a href="mailto:realwarriors@yandex.ru" class="contacts__link contacts__link_mail">realwarriors@yandex.ru</a></label>
+                    <label>Тел.: <a href="tel:89168244997" class="contacts__link contacts__link_tel">8 (916) 824 49 97</a></label>
+                    <label>Figma: <a href="#" class="contacts__link contacts__link_figma">Danila Mjakishev</a></label>
+                    <div class="contacts__networks networks">
+                        <a href="#" class="networks__item networks__item_vk"><img class="networks__item_img" src="image/vk.svg" alt="VK"></a>
+                        <a href="#" class="networks__item networks__item_telegramm"><img class="networks__item_img" src="image/telegramm.svg" alt="telegramm"></a>
+                        <a href="#" class="networks__item networks__item_instagram"><img class="networks__item_img" src="image/instagram.svg" alt="instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-content">
+                    <div class="footer-content__contact-block contact-block">
+                        <div class="contact-block__logo">
+                            <figure class="contact-block__figure">
+                                <img class="contact-block__img" src="image/logo.svg" alt="логотип">
+                                <figcaption class="contact-block__img-capture">
+                                    DenHunter
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <span class="contact-block__telnumb">
+                        Тел.: 8 (916) 824 49 97
+                    </span>
+                        <lable class="contact-block__figma-labl">Figma:
+                            <a href="#" class="contact-block__figma">Danila Mjakishev</a>
+                        </lable>
+                    </div>
+                    <div class="footer-content__low-menu-block">
+                        <nav class="footer-content__low-menu low-menu">
+                            <a href="#" class="low-menu__item">Что я умею</a>
+                            <a href="#" class="low-menu__item">Лэндинги</a>
+                            <a href="#" class="low-menu__item">Контакты</a>
+                        </nav>
+                        <ul class="footer-content__useful-links useful-links">
+                            <li class="useful-links__item">Хэдер</li>
+                            <li class="useful-links__item">Фишки</li>
+                            <li class="useful-links__item">Баннер</li>
+                            <li class="useful-links__item">Отзывы</li>
+                            <li class="useful-links__item">Каталог</li>
+                            <li class="useful-links__item useful-links__item_second-column">Обратная связь</li>
+                            <li class="useful-links__item useful-links__item_second-column">Футер</li>
+                            <li class="useful-links__item useful-links__item_second-column">Адаптивы</li>
+                            <li class="useful-links__item useful-links__item_second-column">UI-kit</li>
+                            <li class="useful-links__item useful-links__item_second-column">Быстрое меню</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content__copyright copyright">
+                    <span class="copyright__item">Designed by pixabay.com; flaticon.com</span>
+                    <span class="copyright__item">Разработка - DenHunter</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
