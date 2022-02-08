@@ -373,6 +373,7 @@ label{
     line-height: 2.473125rem;
     color: #1C6E8C;
     text-decoration: none;
+    transition: .15s;
 }
 .contacts__title{
     margin: 30px 0 30px 0;
@@ -384,6 +385,9 @@ label{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+}
+.networks__item_img{
+    transition: .15s;
 }
 footer{
     background: #274156;
@@ -412,18 +416,10 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 180px;
+    justify-content: space-between;
+    max-height: 210px;
 }
-.contact-block__telnumb{
-    font-family: Oxygen, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.2625rem;
-    color: #E1E5F2;
-    margin-bottom: 20px;
-}
-.contact-block__figma-labl{
+.contact-block__labl{
     font-family: Oxygen, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -431,7 +427,7 @@ footer{
     line-height: 1.2625rem;
     color: #E1E5F2;
 }
-.contact-block__figma{
+.contact-block__item{
     font-family: Oxygen, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -439,6 +435,16 @@ footer{
     line-height: 1.2625rem;
     color: #9DE6DD;
     text-decoration: none;
+    transition: .15s;
+}
+.contact-block__item_telnumb{
+    font-family: Oxygen, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.2625rem;
+    color: #E1E5F2;
+    margin-bottom: 20px;
 }
 .contact-block__networks{
     max-width: 150px;
@@ -496,6 +502,9 @@ footer{
 }
 .contact-block__figure{
     margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .copyright{
     height: 80px;
@@ -511,6 +520,9 @@ footer{
     font-size: 1.0625rem;
     line-height: 1.220625rem;
     color: #FFFFFF;
+}
+.contact-block__networks_item{
+    transition: .15s;
 }
 .header-content__navlink:hover{
     color: #3B4B81;
@@ -540,10 +552,31 @@ footer{
     filter: none;
 }
 .networks__item_img:hover{
-    background: #9DE6DD;
-    box-shadow: 0px 4px 4px #9DE6DD;
-    transition: .2s;
+    fill: #D4FFFA;
+    filter: drop-shadow(0px 4px 4px #3B4B81);
+    transition: .15s;
 }
 .my-advertising__to-my-works:active{
     filter: none;
+}
+.contact-block__networks_item:hover{
+    fill: #D4FFFA;
+    transition: .1s;
+    filter: drop-shadow(0px 4px 4px #D4FFFA);
+}
+.contacts__link:hover{
+    color: #D4FFFA;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: .15s;
+}
+.contacts__link:active{
+    text-shadow: none;
+}
+.contact-block__item_figma:hover{
+    color: #D4FFFA;
+    text-shadow: 0 4px 4px #D4FFFA;
+    transition: .15s;
+}
+.contact-block__item_figma:active{
+    text-shadow: none;
 }
