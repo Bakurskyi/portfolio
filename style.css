@@ -580,3 +580,22 @@ footer{
 .contact-block__item_figma:active{
     text-shadow: none;
 }
+.my-works__show-more{
+    display: none;
+}
+.my-works__show-more_show{
+    display: initial;
+}
+.card-box__hover-wrap_invisible{
+    display: none;
+}
+.card-box__hover-wrap{
+    transform: translateY(+150%);
+    animation: ani 1s forwards;
+}
+@keyframes ani {
+    0% {transform: translateY(+150%);}
+    100% {transform: translateY(0);}
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
