@@ -1,7 +1,7 @@
 const buttonToCards = document.querySelector('.my-advertising__to-my-works');
 const myWorksSection = document.querySelector('.my-works');
 
-buttonToCards.onclick = function (e) {
+buttonToCards.onclick = (e) => {
     e.preventDefault();
     myWorksSection.scrollIntoView({
         behavior: 'smooth',
@@ -15,11 +15,9 @@ if (workCards.length >4){
     showMoreBtn.classList.add('my-works__show-more_show');
 }
 Array.from(workCards).filter((item, index) =>{
-    if (index>3){
-        item.classList.add('card-box__hover-wrap_invisible')
-    }
+    (index<4) && item.classList.remove('card-box__hover-wrap_invisible')
 });
-showMoreBtn.onclick = function showCards (event) {
+showMoreBtn.onclick = (event) => {
     event.preventDefault();
     workCards.forEach((element)=>element.classList.remove('card-box__hover-wrap_invisible'));
     showMoreBtn.classList.remove('my-works__show-more_show');
@@ -29,7 +27,7 @@ document.addEventListener("click", navLink);
 document.addEventListener("click", lowNavLink);
 function selectSection() {
     const linkName = event.target.getAttribute('data-name');
-    let sectionName = document.querySelector(`section[data-name='${linkName}']`);
+    const sectionName = document.querySelector(`section[data-name='${linkName}']`);
     sectionName.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
